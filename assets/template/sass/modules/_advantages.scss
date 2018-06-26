@@ -1,0 +1,26 @@
+.advantages
+{
+    .item_img
+    {
+        img
+        {
+            background: $main_color;
+        }
+
+    }
+}
+.advantages
+{
+    &_flag
+    {
+        position: absolute;
+        right: 15px;
+        top: -67px;
+        width: 200px;
+        @include media-breakpoint-up(lg)
+        {
+            top: -84px;
+            right: 40px;
+        }
+    }
+}

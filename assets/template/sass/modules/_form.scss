@@ -1,0 +1,104 @@
+%button_text {
+  font-size: 17px;
+  font-weight:700;
+  color: $heads_color;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 26px;
+  }
+}
+%form_header_text {
+  font-size: 20px;
+  font-weight:700;
+  position: relative;
+  @include media-breakpoint-up(lg) {
+    font-size: 32px;
+  }
+}
+%button_gradient {
+  background: linear-gradient(to bottom, $lighten_main_color ,$main_color 100%);
+}
+.button-links {
+  @extend %button_text;
+  @extend %button_gradient;
+}
+.form_m {
+  margin-top: 15px;
+  transform: scale(0.7);
+  position: relative;
+  left: -15px;
+  @include media-breakpoint-up(md)
+  {
+    transform: scale(1);
+    position: static;
+  }
+}
+.ya_map {
+  max-width: 100%;
+  overflow: hidden;
+}
+.form_header
+{
+  background-color: $form_header;
+}
+.form_header_text {
+  @extend %form_header_text;
+}
+.modal_forms form {
+  padding: 0;
+}
+
+.section_form_consult
+{
+    background: url("../img/bg_img_2.jpg") 0 0 no-repeat;
+    background-size:cover;
+  &-form
+  {
+    background-color: rgba(60,147,209,0.8);
+
+    label,a,p
+    {
+      color: #fff;
+    }
+  }
+}
+.section_form_consult-form
+{
+
+}
+
+
+
+
+.section_count_form
+{
+  background: #fff url("../img/bg_img_4.jpg") 0 0 no-repeat;
+  background-size:cover;
+  .form
+  {
+    background: #fff;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding:10px 5%;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius:10px;
+
+  &:hover
+  {
+    color: #fff;
+  }
+
+  @include media-breakpoint-up(xl)
+  {
+    font-size: 25px;
+    padding:15px 15%;
+  }
+
+
+
+}
