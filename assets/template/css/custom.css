@@ -23,3 +23,16 @@
 .custom_arrows i {
     font-size: 18px;
 }
+.hov_main_color:hover {
+    color: #5baa00;
+
+}
+.modal_forms form {
+    padding: 0;
+}
+form .custom-control a {
+    vertical-align: sub;
+}
+.breadcrumb li {
+    display: inline-block;
+}

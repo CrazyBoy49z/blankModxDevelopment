@@ -168,7 +168,7 @@
                                     <div class="col-md-7">
                                         Подробно расскажем о наших&nbsp;услугах, видах&nbsp;работ и типовых&nbsp;проектах, рассчитаем стоимость и подготовим индивидуальное предложение!&nbsp;<br>										</div>
                                     <div class="col-md-2">
-                                        <span class="button button_dark cur" data-event="fancy" data-name="question">Задать вопрос</span>
+                                        <span class="button button_dark cur" data-event="fancy" data-name="feedback">Задать вопрос</span>
                                     </div>
                             </div>
                         </div>

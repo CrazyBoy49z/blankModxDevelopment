@@ -450,6 +450,7 @@ body {
 .fixed_top_panel .header {
   position: fixed;
   z-index: 120;
+  border-bottom: 1px solid #ccc;
   -webkit-animation: fixedpanel .8s both;
   animation: fixedpanel .8s both;
 }
@@ -830,7 +831,7 @@ body {
 }
 
 .form_header {
-  background-color: #3C93D1;
+  background-color: #5baa00;
 }
 
 .modal_forms form {
@@ -884,6 +885,9 @@ body {
   position: static;
   display: inline-block;
   width: 65%;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 
 .fixed_top_panel .header__search-input {

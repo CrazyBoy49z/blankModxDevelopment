@@ -1,13 +1,18 @@
-// captcha
-// var onloadCallback = function() {
-//     mysitekey = '6Leq4jcUAAAAAK9o3wR7h_lpIMQvOQ2Kr2Ldr-00';
-//
-//     if($('#callback_g').length ){
-//         grecaptcha.render('callback_g', {
-//             'sitekey' : mysitekey
-//         });
-//     }
-// }
+
+var onloadCallback = function() {
+    mysitekey = '6LfLvlAUAAAAALcfj4ofUlUAhk28tWB99Unrldpr';
+
+    if($('#callback_g').length ){
+        grecaptcha.render('callback_g', {
+            'sitekey' : mysitekey
+        });
+    }
+    if($('#feedback_g').length ){
+        grecaptcha.render('feedback_g', {
+            'sitekey' : mysitekey
+        });
+    }
+}
 $(function () {
 
     var $body = $('body');
@@ -60,6 +65,7 @@ $(function () {
         if ($(this).data('event') == 'fancy') {
             $.fancybox.open({
                 src: '#' + $(this).data('name'),
+                slideClass: 'modal_forms',
             });
         }
     });
@@ -90,7 +96,6 @@ $(function () {
 
 
         fixedPanel();
-        //  я не понимаю, но он не работает
         $(document).scroll(function () {
             fixedPanel();
         });
@@ -120,35 +125,7 @@ $(function () {
     var seeUl = $('.iseeu_menu > ul');
     seeUl.addClass('iseeu_class').removeClass('header__menu');
 
-    // $('#copy-mobile .parent > span').click(function () {
-    //     if ($(this).hasClass('open_li')) {
-    //         $(this).removeClass('open_li');
-    //     } else {
-    //         $(this).addClass('open_li');
-    //     }
-    //     $(this).prev().slideToggle();
-    // });
-    // if (window.matchMedia('(min-width: 768px)').matches) {
-    //     var windowHeight = $(window).height();
-    //     $('.top_ul ul .parent').mouseover(function () {
-    //         var ul = $(this).find('ul').eq(0);
-    //         var offset = $(this).offset();
-    //         var ulHeight = ul.innerHeight();
-    //         var ulBottom = windowHeight - ulHeight - offset.top;
-    //         console.log('vindowHeight: ' + windowHeight + ' ulHeight: ' + ulHeight + ' offsetTop: ' + offset.top);
-    //         console.log(ulBottom + ' ulbottom ' + $(this).find('a').eq(0).text());
-    //         if (ulBottom < 0) {
-    //             ul.css('top', ulBottom-20);
-    //         }
-    //     });
-    // }
-
-
-
-
-
-
-
-
-
+    $('body').on('focusin', 'input[name="phone"]', function () {
+        $(this).mask('+7 (999) 999-99-99');
+    });
 });
