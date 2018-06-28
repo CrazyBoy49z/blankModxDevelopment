@@ -31,7 +31,6 @@ $(function () {
         autoplay: true,
         infinite: false,
         speed: 300,
-        // arrows: false,
         prevArrow: '.custom_arrows-left',
         nextArrow: '.custom_arrows-right',
         slidesToShow: 4,
@@ -92,8 +91,7 @@ $(function () {
 
         fixedPanel();
         //  я не понимаю, но он не работает
-        $(document).on('scroll', function() {
-
+        $(document).scroll(function () {
             fixedPanel();
         });
 
@@ -108,6 +106,8 @@ $(function () {
             $(this).next().slideToggle();
         });
     }
+    
+
 
     $('.header__search').click(function () {
         $('.header__wrap-menu .header__search-form').toggleClass('show');

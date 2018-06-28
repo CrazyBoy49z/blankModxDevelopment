@@ -125,29 +125,55 @@
     </div>
 </div>
 <div class="row bg_gray">
-        <div class="container">
-            <div class="col-md-12">
-               	<div class="item-views portfolio front">
-                    <div class="top_wrapper_block">
-                        <div class="row" itemscope="" itemtype="http://schema.org/ItemList">
-                            <div class="col-md-3 col-6 link">
-                                <div class="item">
-                                    <div class="top_title"><div>Недавние объекты</div></div>
-                                    <div class="bottom_title"><div><a href="[[~43]]" class="btn btn-default white"><span>Все работы</span></a></div></div>
+    <div class="container">
+        <div class="col-md-12">
+            <div class="item-views portfolio front">
+                <div class="top_wrapper_block">
+                    <div class="row" itemscope="" itemtype="http://schema.org/ItemList">
+                        <div class="col-md-3 col-6 link">
+                            <div class="item">
+                                <div class="top_title">
+                                    <div>Недавние объекты</div>
+                                </div>
+                                <div class="bottom_title">
+                                    <div><a href="[[~43]]" class="btn btn-default white"><span>Все работы</span></a>
+                                    </div>
                                 </div>
                             </div>
-                            [[pdoResources?
-                            &parents=`43`
-                            &includeTVs=`image`
-                            &tvPrefix=``
-                            &where=`{"image:!=":""}`
-                            &tpl=`mainProjectsTpl`
-                            ]]
-
-
+                        </div>
+                        [[pdoResources?
+                        &parents=`43`
+                        &includeTVs=`image`
+                        &tvPrefix=``
+                        &where=`{"image:!=":""}`
+                        &tpl=`mainProjectsTpl`
+                        ]]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+[[$mainAboutCompany]]
+<div class="row bg_main_color">
+        <div class="maxwidth-theme">
+            <div class="col-md-12">
+                <div class="block front">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                    <div class="col-md-3">
+                                        <h2>Нужна консультация?</h2>
+                                    </div>
+                                    <div class="col-md-7">
+                                        Подробно расскажем о наших&nbsp;услугах, видах&nbsp;работ и типовых&nbsp;проектах, рассчитаем стоимость и подготовим индивидуальное предложение!&nbsp;<br>										</div>
+                                    <div class="col-md-2">
+                                        <span class="button button_dark cur" data-event="fancy" data-name="question">Задать вопрос</span>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-               </div>
+            </div>
         </div>
     </div>

@@ -179,16 +179,20 @@ table.table > thead > tr > th{font-size:14px;font-weight:normal;padding-top:10px
 .docs .text a, .form.inline .captcha-row .input label.error, .form.popup .captcha-row .input label.error {
     white-space: nowrap
 }
-html {
-    overflow-x: hidden;
-    overflow-y: auto
-}
+/*html {*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: auto*/
+/*}*/
 body, html {
     width: 100%;
     height: 100%
+
 }
-body {
-    margin: 0
+/*body {*/
+    /*margin: 0*/
+/*}*/
+.body {
+    overflow: auto;
 }
 * html .clearfix {
     height: 1%
@@ -2164,7 +2168,7 @@ footer .info + .social {
     height: 45px;
     top: 50%;
     opacity: 1;
-    background: url(images/r_block.png) no-repeat;
+    background: url(../img/right-narrow.png) no-repeat;
     z-index: 3;
     right: 0;
     margin-top: -23px

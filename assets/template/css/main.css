@@ -795,7 +795,7 @@ body {
 
 .button_dark {
   background-color: #5baa00;
-  border-color: transparent;
+  border-color: #fff;
   color: #fff;
 }
 
