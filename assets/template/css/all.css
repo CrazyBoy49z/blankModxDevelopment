@@ -63,7 +63,7 @@ dd{margin-bottom:14px;color:#444444;}
 dd + dd{margin-top:-14px;}
 table.table > thead > tr > th{font-size:14px;font-weight:normal;padding-top:10px;padding-bottom:9px;border-bottom-width:0px;}
 /*table*/
-.title_centerzag{border-bottom:1px solid #d4d4d4;}
+.title_centerzag{border-bottom:1px solid #5baa00;}
 .big_size_table{font-size:18px;}
 .table tr td{border-bottom:1px solid #e2e7e8;background: #fff;}
 .table tr td.last{border-bottom-width:0px;}
@@ -142,10 +142,10 @@ table.table > thead > tr > th{font-size:14px;font-weight:normal;padding-top:10px
 .btn-default.white.btn-lg{padding-top:11px;padding-bottom:10px;}
 .bx-firefox .btn-default.white.btn-lg, .bx-ie .btn-default.white.btn-lg{padding-top:10px;padding-bottom:11px;}
 .bx-ie .btn-default.white.btn-lg{padding-bottom:10px;}
-.btn-default.white_br.white{border-color:#fff;color:#fff !important;background:#d4d4d4;}
+.btn-default.white_br.white{border-color:#fff;color:#fff !important;background:#5baa00;}
 .btn-default.white_br.white span{color:#fff !important;}
-.btn-default.white_br.white:hover{border-color:#fff;color:#d4d4d4 !important;background:#fff !important;}
-.btn-default.white_br.white:hover span{color:#d4d4d4 !important;}
+.btn-default.white_br.white:hover{border-color:#fff;color:#5baa00 !important;background:#fff !important;}
+.btn-default.white_br.white:hover span{color:#5baa00 !important;}
 .bx-ie .bx_filter_search_button{padding-top:5px;padding-bottom:8px;}
 
 
@@ -222,7 +222,7 @@ html[xmlns] .clearfix {
     position: absolute;
     height: 12px;
     top: 2px;
-    border: 1px solid #d4d4d4
+    border: 1px solid #5baa00
 }
 label {
     font-weight: 400
@@ -514,7 +514,7 @@ img.captcha_img {
     margin: 5px 0 25px
 }
 .color_block {
-    background: #d4d4d4
+    background: #5baa00
 }
 .input.error input, .input.error textarea {
     border-color: #e02222
@@ -609,8 +609,8 @@ img.captcha_img {
 .form .form-header {
     min-height: 115px;
     padding: 30px 30px 45px 36px;
-    background: #d4d4d4;
-    border-top: 2px solid #d4d4d4
+    background: #5baa00;
+    border-top: 2px solid #5baa00
 }
 .form .form-header .text {
     padding-left: 74px;
@@ -621,7 +621,7 @@ img.captcha_img {
     height: 54px;
     line-height: 54px;
     text-align: center;
-    color: #d4d4d4;
+    color: #5baa00;
     float: left;
     font-size: 36px;
     border-radius: 2px;
@@ -1594,7 +1594,7 @@ div.title-search-result td.title-search-price span {
     font-size: 10px;
     line-height: 19px;
     color: #fff;
-    background: #d4d4d4;
+    background: #5baa00;
     border-radius: 10px;
     text-transform: uppercase;
     padding: 0 10px;
@@ -1617,7 +1617,7 @@ div.title-search-result td.title-search-price span {
     position: absolute;
     bottom: 0;
     line-height: 18px;
-    background: #d4d4d4;
+    background: #5baa00;
     padding: 4px 10px;
     right: 0;
     font-size: 14px;
@@ -1752,8 +1752,8 @@ footer .info .phone .info_ext {
 }
 footer .info .phone .info_ext div.popup_form_ext span {
     font-size: 13px;
-    border-bottom: 1px dotted #d4d4d4;
-    color: #d4d4d4;
+    border-bottom: 1px dotted #5baa00;
+    color: #5baa00;
     cursor: pointer
 }
 footer .info .phone .info_ext div.popup_form_ext span:hover {
@@ -3203,7 +3203,7 @@ a.scroll-to-top.CONTENT {
     text-shadow: none
 }
 .detail .galery #slider .flex-direction-nav a:hover {
-    background: #d4d4d4
+    background: #5baa00
 }
 .detail .galery #slider.flexslider:hover .flex-direction-nav a {
     opacity: 1
@@ -3350,7 +3350,7 @@ a.scroll-to-top.CONTENT {
     line-height: 14px
 }
 .detail .chars .props_table .char_name .hint .icons:hover {
-    background: #d4d4d4
+    background: #5baa00
 }
 .detail .chars .props_table .char_name .hint .icons:hover i {
     color: #fff
@@ -3413,7 +3413,7 @@ a.scroll-to-top.CONTENT {
     height: 2px;
     bottom: 0;
     opacity: 1;
-    background: #d4d4d4;
+    background: #5baa00;
     z-index: 3;
     left: 0
 }
@@ -3479,7 +3479,7 @@ a.scroll-to-top.CONTENT {
     font-size: 10px;
     line-height: 18px;
     color: #fff;
-    background: #d4d4d4;
+    background: #5baa00;
     border-radius: 10px;
     text-transform: uppercase;
     padding: 0 10px;
@@ -3521,7 +3521,7 @@ a.scroll-to-top.CONTENT {
     display: block
 }
 .portfolio.item-views .link .item {
-    background: #d4d4d4;
+    background: #5baa00;
     color: #fff
 }
 .portfolio.item-views .link .item > div {
@@ -3549,7 +3549,7 @@ a.scroll-to-top.CONTENT {
     bottom: 20px;
     top: auto;
     border-color: #fff;
-    background: #d4d4d4
+    background: #5baa00
 }
 .portfolio.item-views .link .item .bottom_title .btn-default span {
     color: #fff
@@ -3558,7 +3558,7 @@ a.scroll-to-top.CONTENT {
     background: #fff !important
 }
 .portfolio.item-views .link .item .bottom_title .btn-default:hover span {
-    color: #d4d4d4
+    color: #5baa00
 }
 .news.front {
     position: relative
@@ -3583,7 +3583,7 @@ a.scroll-to-top.CONTENT {
     height: 2px;
     bottom: 0;
     opacity: 1;
-    background: #d4d4d4;
+    background: #5baa00;
     z-index: 3;
     left: 0
 }
@@ -4106,7 +4106,7 @@ a.scroll-to-top.CONTENT {
     height: 31px;
     cursor: pointer;
     border-left: 1px solid #E5E5E5;
-    background: #d4d4d4;
+    background: #5baa00;
     text-align: center;
     line-height: 32px
 }
@@ -4114,7 +4114,7 @@ a.scroll-to-top.CONTENT {
     content: "";
     width: 7px;
     height: 4px;
-    background: #d4d4d4;
+    background: #5baa00;
     display: none
 }
 .bx_filter .bx_filter_select_arrow .fa {
@@ -4174,7 +4174,7 @@ a.scroll-to-top.CONTENT {
     top: 0
 }
 .catalog.bx_filter .bx_filter_parameters_box_title:hover:before {
-    color: #d4d4d4
+    color: #5baa00
 }
 .bx_filter.front .bx_filter_parameters_box_title:hover {
     color: #333
@@ -4922,7 +4922,7 @@ div[id^=smartFilterDropDown] .popup-window-bottom-row, div[id^=smartFilterDropDo
     left: -7px;
     color: #FFF;
     font-style: normal;
-    background: #d4d4d4;
+    background: #5baa00;
     z-index: 1
 }
 .catalog.sections .item .title {
@@ -5133,11 +5133,11 @@ div[id^=smartFilterDropDown] .popup-window-bottom-row, div[id^=smartFilterDropDo
     display: inline-block;
     padding: 0 17px 0 0;
     cursor: pointer;
-    color: #d4d4d4;
+    color: #5baa00;
     margin: 0 0 34px
 }
 .more_block span:before {
-    color: #d4d4d4;
+    color: #5baa00;
     position: absolute;
     font-family: FontAwesome;
     content: "\f078";
