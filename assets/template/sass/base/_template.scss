@@ -68,9 +68,14 @@
 .bg_main_color {
     background-color: $main_color;
 }
-.bg_lighten_main_color {
-    background-color: $lighten_main_color;
+
+.dark_content {
+    color: $dark_content_color;
 }
+.lalala {
+    font-size: 14px;
+}
+
 
 // END OF COLOURS
 
@@ -179,9 +184,7 @@
 .opacity_bg {
     @extend %opacity_bg;
 }
-.button_text {
-    @extend %button_text;
-}
+
 
 .img_mini_icon {
     padding:3px;

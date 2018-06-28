@@ -1,0 +1,25 @@
+.item__title-link a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.bg_gray {
+    background-color: #f7f7f8;
+}
+.tal {
+    text-align: left;
+}
+.w100p {
+    width: 100%;
+}
+.custom_arrows > div {
+    display: inline-block;
+    border:2px solid #ccc;
+    padding:4px 9px;
+    text-align: center;
+}
+.custom_arrows i {
+    font-size: 18px;
+}
