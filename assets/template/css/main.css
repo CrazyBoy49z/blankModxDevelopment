@@ -781,6 +781,7 @@ body {
   text-align: center;
   display: inline-block;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .button_white {

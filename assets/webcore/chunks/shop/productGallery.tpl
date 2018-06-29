@@ -1,11 +1,11 @@
-<div class="flexslider unstyled row" id="slider">
-    <ul class="catalog_slider slides items">
+<div>
+    <ul class="catalog_slider">
         {if $files?}
             {foreach $files as $file}
-                <li class="col-md-12 item">
+                <li class="">
                     <a href="{$file['url']}"
                             class="fancybox"
-                            rel="gallery"
+                            data-fancybox="gallery"
                             target="_blank"
                             title="[[*pagetitle]]">
                         <img src="{$file['big']}"
