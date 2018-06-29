@@ -90,8 +90,6 @@
                         &parents=`6`
                         &limit=`8`
                         &includeThumbs=`middle`
-                        &includeTVs=`direction,numFloor`
-                        &tvPrefix=``
                         &tpl=`mainProductsTpl`
                         ]]
                     </div>

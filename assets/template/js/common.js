@@ -81,6 +81,7 @@ $(function () {
     $('.main_slider').slick({
         dots: true
     });
+    $('.catalog_slider').slick();
 
 
     if (window.matchMedia("(min-width: 768px)").matches) {

@@ -1,13 +1,90 @@
 .main_slider
 {
-    @include pad-y(15,15,50,50);
-
-    .slider_scroll
+    .item
     {
-        display: inline-block;
-        width: 43px;
-        height: 80px;
-        background: url("../img/icon_scroll_mouse.png") 0 0 no-repeat;
+
+        .title
+        {
+
+            font-size: 20px;
+            line-height: 38px;
+            padding: 0 0 9px;
+            font-weight: 700;
+
+            @include media-breakpoint-up(md)
+            {
+                font-size: 25px;
+            }
+
+            @include media-breakpoint-up(lg)
+            {
+                font-size: 36px;
+            }
+        }
+        .text-block
+        {
+            margin-bottom: 32px;
+            font-size: 16px;
+
+        }
+
+        .white
+        {
+            .text-block
+            {
+                color:#fff;
+            }
+            .title
+            {
+                color:#fff;
+            }
+        }
+        .dark
+        {
+            .text-block
+            {
+                color:#222;
+            }
+            .title
+            {
+                color:#222;
+            }
+        }
     }
+
+}
+.slick-arrow {
+    z-index: 2;
+    //position: relative;
+    opacity:0.5;
+    display: none;
+}
+.main_slider:hover .slick-arrow {
+    display: block;
+}
+.slick-prev {
+    left: 40px;
+}
+.slick-next {
+    right: 80px;
+}
+.slick-prev:before{
+    font-family: Font Awesome\ 5 Free;
+    content: "\f104";
+    position: absolute;
+
+    color: #fff;
+}
+.slick-next:before{
+    font-family: Font Awesome\ 5 Free;
+    content: "\f105";
+    position: absolute;
+
+    color: #fff;
+}
+.slick-arrow:before {
+    background: #333;
+    border-radius: 50%;
+    padding: 0px 14px;
 }
 

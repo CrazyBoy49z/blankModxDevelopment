@@ -46,7 +46,7 @@
                         ]]
                     </div>
                 </div>
-                `:else=`lalala`]]
+                `:else=`[[$productsRow]]`]]
                 <div class="content my-5">[[*content]]</div>
             </div>
         </div>

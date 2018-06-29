@@ -8,15 +8,74 @@
         top: 0;
     }
 }
-.fixed_top_panel .header{
-    position: fixed;
-    z-index: 120;
-    animation: fixedpanel .8s both;
+.fixed_top_panel
+{
+    .header
+    {
+        position: fixed;
+        z-index: 120;
+        border-bottom:1px solid #ccc;
+        animation: fixedpanel .8s both;
+
+        &__top
+        {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+        &__logo
+        {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+
+        &__wrap
+        {
+            &-menu
+            {
+                display: none;
+            }
+        }
+
+    }
+
 }
 
-.header{
+
+.header
+{
     position: relative;
     top:0;
     right: 0;
     left: 0;
+    background: #fff;
+
+    &__top
+    {
+        padding-top:1.5rem;
+        padding-bottom:1.5rem;
+
+    }
+
+    &__logo
+    {
+        a
+        {
+            font-size: 30px;
+        }
+    }
+    &__contacts
+    {
+        &-phone
+        {
+            font-size: 20px;
+
+            i
+            {
+                transform: rotate(100deg);
+            }
+        }
+    }
+
+
 }

@@ -54,18 +54,11 @@
             </div>
             <div class="footer_button">
                 <div class="char">
-                    [[+numFloor:notempty=`
-                        <div class="char_item">
-                            <span class="name">Этажей: </span>
-                            <span class="value">[[+numFloor]]</span>
-                        </div>
-                    `]]
-                    [[+direction:notempty=`
-                        <div class="char_item">
-                            <span class="name">Назначение: </span>
-                            <span class="value">[[+direction]]</span>
-                        </div>
-                    `]]
+                    [[getProductOptions?
+                    &options=`house_direction,house_flat`
+                    &product=`[[+id]]`
+                    &tplInner=`mainProductsOptionsTpl`
+                    ]]
                 </div>
             </div>
         </div>
