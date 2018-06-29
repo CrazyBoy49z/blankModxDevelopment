@@ -1,3 +1,4 @@
+[[--!printPlaceholders]]
 <div class="main">
     <div class="row bg_gray">
         <div class="container">
@@ -49,7 +50,7 @@
                                     <div class="row1 foot big">
                                         <div class="item_f wprice">
                                             <div class="size_block">
-                                                {$size[0]} м<sup>2</sup></div>
+                                                [[+size0]] м<sup>2</sup></div>
                                         </div>
                                         <div class="item_f ">
                                             <div class="price">
@@ -69,7 +70,7 @@
                                     <div class="previewtext" itemprop="description">[[*description]]</div>
                                     `]]
                                     <div class="more_block"><span class="smooth_scroll"
-                                                data-scroll="content">Подробнее</span></div>
+                                                data-scroll="content">Подробнее <i class="fas fa-angle-down main_color cur"></i></span></div>
                                     <div class="order">
                                                     <span class="button button_dark cur"
                                                             data-event="fancy"

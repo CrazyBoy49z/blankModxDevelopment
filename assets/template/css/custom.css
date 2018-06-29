@@ -36,3 +36,12 @@ form .custom-control a {
 .breadcrumb li {
     display: inline-block;
 }
+.table_wrapper, .content {
+    max-width:100%;
+    overflow-x:auto;
+
+}
+.table_wrapper table, .content table {
+    max-width: 100%;
+    display: inline-block;
+}
