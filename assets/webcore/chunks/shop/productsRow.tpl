@@ -9,7 +9,10 @@
                 &tpl=`productsRowTpl`
                 &includeThumbs=`middle`
                 &limit=`3`
+                &tplPageFirst=``
+                &tplPageLast=``
                 ]]
+                <div class="w-100"></div>
                 [[!+page.nav]]
             </div>
         </div>

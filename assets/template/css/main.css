@@ -973,6 +973,53 @@ body {
   background-color: #eceff1;
 }
 
+div.pagination {
+  width: 100%;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination ul {
+  display: inline-block;
+}
+
+.pagination ul li {
+  display: inline-block;
+  margin-right: 8px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.pagination ul li span {
+  padding: 4px 7px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  vertical-align: top;
+  color: #333;
+}
+
+.pagination ul li span:hover {
+  color: #333;
+}
+
+.pagination ul li a {
+  display: inline-block;
+  background-color: transparent;
+  color: #5baa00;
+  padding: 4px 7px;
+  height: auto;
+  width: auto;
+  vertical-align: top;
+}
+
+.pagination ul li a:hover {
+  text-decoration: underline;
+  color: #5baa00;
+}
+
 @media (min-width: 576px) {
   .pad-equal {
     padding: 30px 15px;

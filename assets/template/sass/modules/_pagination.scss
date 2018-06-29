@@ -1,0 +1,49 @@
+div.pagination {
+    width: 100%;
+}
+.pagination
+{
+    text-align: center;
+    ul
+    {
+        display: inline-block;
+        li
+        {
+            display: inline-block;
+            margin-right: 8px;
+            background-color: transparent;
+            text-align: center;
+
+            span
+            {
+                padding:4px 7px;
+                display: inline-block;
+                width:auto;
+                height:auto;
+                vertical-align: top;
+                color: $content_color;
+
+                &:hover
+                {
+                    color: $content_color;
+                }
+            }
+            a
+            {
+                display: inline-block;
+                background-color: transparent;
+                color: $main_color;
+                padding:4px 7px;
+                height:auto;
+                width:auto;
+                vertical-align: top;
+
+                &:hover
+                {
+                    text-decoration: underline;
+                    color: $main_color;
+                }
+            }
+        }
+    }
+}
