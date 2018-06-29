@@ -1,11 +1,12 @@
-<div class="col-md-3">
-    <aside class="sidebar">
+<div class="col-md-3 d-none d-md-flex">
+    <div class="sidebar">
         [[pdoMenu?
         &parents=`[[!leftMenuParent]]`
-        &outerClass=`nav nav-list side-menu`
+        &outerClass=`aside__menu`
         &innerClass=`submenu`
         &level=`2`
+        &tplParentRow=`leftMenuTpl`
         &parentClass=`child`
         ]]
-    </aside>
+    </div>
 </div>

@@ -101,4 +101,8 @@ $(function () {
     $('body').on('focusin', 'input[name="phone"]', function () {
         $(this).mask('+7 (999) 999-99-99');
     });
+
+    $('.aside__menu i').click(function () {
+        $(this).toggleClass('open');
+    });
 });

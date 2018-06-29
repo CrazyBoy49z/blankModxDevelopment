@@ -699,6 +699,80 @@ body {
   color: #fff;
 }
 
+.aside__menu {
+  outline: 1px solid #f5f6f7;
+}
+
+.aside__menu li {
+  display: block;
+}
+
+.aside__menu li.active {
+  background-color: #5baa00;
+}
+
+.aside__menu li.active > a {
+  color: #ffffff;
+}
+
+.aside__menu li.active > i {
+  color: #fff;
+}
+
+.aside__menu a {
+  padding: 7px;
+  color: #333;
+  display: inline-block;
+  width: 100%;
+}
+
+.aside__menu i {
+  color: #333;
+}
+
+.aside__menu > li {
+  border-bottom: 1px solid #ccc;
+}
+
+.aside__menu > li > a {
+  padding: 10px;
+}
+
+.aside__menu > li.child.open > .submenu {
+  height: auto;
+  visibility: visible;
+}
+
+.aside__menu > li.child > a {
+  width: 90%;
+}
+
+.aside__menu > li.child > i {
+  display: inline-block;
+  width: -webkit-calc(10% - 0.5em);
+  width: calc(10% - 0.5em);
+}
+
+.aside__menu > li.child > i.open + .submenu {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
+.aside__menu .submenu {
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  background-color: #f5f6f7;
+}
+
+.aside__menu .submenu li {
+  border-bottom: 1px solid #f2f2f2;
+}
+
 .main_slider .item .title {
   font-size: 20px;
   line-height: 38px;

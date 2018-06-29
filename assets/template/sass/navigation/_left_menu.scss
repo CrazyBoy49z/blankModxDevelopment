@@ -1,0 +1,94 @@
+.aside
+{
+    &__menu
+    {
+        outline:1px solid $light_gray_color;
+
+        li
+        {
+            display: block;
+
+            &.active
+            {
+                background-color: $main_color;
+                & > a
+                {
+                    color: #ffffff;
+                }
+                & > i
+                {
+                    color: #fff;
+                }
+
+            }
+
+        }
+
+        a
+        {
+            padding:7px;
+            color: $content_color;
+            display: inline-block;
+            width: 100%;
+        }
+
+        i
+        {
+            color: $content_color;
+        }
+        & > li
+        {
+            border-bottom:1px solid #ccc;
+            & > a
+            {
+                padding: 10px;
+            }
+        }
+        & > li.child
+        {
+            &.open
+            {
+                & > .submenu
+                {
+                    height:auto;
+                    visibility: visible;
+                }
+            }
+            & > a
+            {
+                width: 90%;
+            }
+            & > i
+            {
+                display: inline-block;
+                width:calc(10% - 0.5em);
+
+                &.open
+                {
+                    & + .submenu
+                    {
+
+                        visibility: visible;
+                        opacity:1;
+                        height:auto;
+                    }
+                }
+            }
+        }
+
+        .submenu
+        {
+            visibility: hidden;
+            height: 0;
+            opacity:0;
+            //transition:1s;
+            transition: all 1s ease;
+            background-color: $light_gray_color;
+
+            li
+            {
+                border-bottom: 1px solid #f2f2f2;
+            }
+        }
+    }
+}
