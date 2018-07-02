@@ -5137,16 +5137,16 @@ div[id^=smartFilterDropDown] .popup-window-bottom-row, div[id^=smartFilterDropDo
     color: #5baa00;
     margin: 0 0 34px
 }
-.more_block span:before {
-    color: #5baa00;
-    position: absolute;
-    font-family: FontAwesome;
-    content: "\f078";
-    font-size: 8px;
-    right: 2px;
-    font-weight: 400;
-    top: 0
-}
+/*.more_block span:before {*/
+    /*color: #5baa00;*/
+    /*position: absolute;*/
+    /*font-family: FontAwesome;*/
+    /*content: "\f078";*/
+    /*font-size: 8px;*/
+    /*right: 2px;*/
+    /*font-weight: 400;*/
+    /*top: 0*/
+/*}*/
 .more_block span:hover, .more_block span:hover:before {
     color: #333
 }

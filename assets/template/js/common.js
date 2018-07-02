@@ -10,6 +10,11 @@ var onloadCallback = function () {
             'sitekey': mysitekey
         });
     }
+    if ($('#count_g').length) {
+        grecaptcha.render('count_g', {
+            'sitekey': mysitekey
+        });
+    }
 }
 $(function () {
     var $body = $('body');

@@ -8,7 +8,7 @@
                 &parents=`[[*id]]`
                 &tpl=`productsRowTpl`
                 &includeThumbs=`middle`
-                &limit=`3`
+                &limit=`9`
                 &tplPageFirst=``
                 &tplPageLast=``
                 ]]

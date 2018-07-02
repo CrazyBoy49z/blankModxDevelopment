@@ -25,8 +25,8 @@
                     </div>
                     <div class="row justify-content-end d-none d-md-flex align-items-center">
                         <div class="col-auto d-none d-md-block header__contacts-phone">
-                            <div><i class="fas fa-phone main_color"></i> <a class="dark_content" href="tel:0000000">74555555555</a></div>
-                            <div><i class="fas fa-phone main_color"></i> <a class="dark_content" href="tel:0000000">74555555555</a></div>
+                            <div><i class="fas rotate_phone fa-phone main_color"></i> <a class="dark_content" href="tel:0000000">74555555555</a></div>
+                            <div><i class="fas rotate_phone fa-phone main_color"></i> <a class="dark_content" href="tel:0000000">74555555555</a></div>
                         </div>
                         <div class="col-auto d-none d-md-block header__contacts-callback">
                             <div class="cur button button_white button_rounded" data-event="fancy" data-name="callback">Заказать звонок</div>

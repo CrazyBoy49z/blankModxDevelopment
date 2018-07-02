@@ -21,16 +21,28 @@
         <td><b>Email </b></td>
         <td>[[+email]]</td>
     </tr>
-    [[+color:notempty=`
+    [[+flat:notempty=`
     <tr>
-        <td><b>Желаемый цвет пленки</b></td>
-        <td>[[+color]]</td>
+        <td><b>Этажность дома</b></td>
+        <td>[[+flat]]</td>
     </tr>
     `]]
-    [[+volume:notempty=`
+    [[+square:notempty=`
     <tr>
-        <td><b>Примерный объем</b></td>
-        <td>[[+volume]]</td>
+        <td><b>Общая площадь (по всем этажам)</b></td>
+        <td>[[+square]]</td>
+    </tr>
+    `]]
+    [[+edition:notempty=`
+    <tr>
+        <td><b>Варианты строительства</b></td>
+        <td>[[+edition]]</td>
+    </tr>
+    `]]
+    [[+material:notempty=`
+    <tr>
+        <td><b>Материал стен дома</b></td>
+        <td>[[+material]]</td>
     </tr>
     `]]
     `]]

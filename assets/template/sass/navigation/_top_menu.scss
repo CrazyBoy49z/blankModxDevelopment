@@ -20,7 +20,7 @@
            
            &.active
            {
-               a
+               & > a
                {
                    background-color: $darken_main_color;
                    color: #fff;

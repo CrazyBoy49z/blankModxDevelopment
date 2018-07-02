@@ -1,4 +1,3 @@
-[[--!printPlaceholders]]
 <div class="main">
     <div class="row bg_gray">
         <div class="container">
@@ -98,7 +97,23 @@
                             </div>
                         </div>
                     </div>
-                    [[$productAdvantages]]
+                    [[*manyIcons:notempty=`
+                        <div class="bx_item_detail_inc_two banners-small front">
+                            <div class="items row_custom">
+                                [[pdoResources?
+                                &parents=`33`
+                                &resources=`[[*manyIcons]]`
+                                &showHidden=`1`
+                                &showUnpublished=`1`
+                                &includeTVs=`image`
+                                &where=`{"image:!=":""}`
+                                &tvPrefix=``
+                                &includeContent=`1`
+                                &tpl=`productAdvantagesTpl`
+                                ]]
+                            </div>
+                        </div>
+                    `]]
                 </div>
             </div>
         </div>

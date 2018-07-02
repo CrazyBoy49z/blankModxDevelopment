@@ -490,12 +490,6 @@ body {
   font-size: 20px;
 }
 
-.header__contacts-phone i {
-  -webkit-transform: rotate(100deg);
-  -ms-transform: rotate(100deg);
-  transform: rotate(100deg);
-}
-
 .header__wrap-menu {
   position: relative;
 }
@@ -504,7 +498,7 @@ body {
   position: relative;
 }
 
-.header__menu li.active a {
+.header__menu li.active > a {
   background-color: #407700;
   color: #fff;
   -webkit-box-sizing: border-box;
@@ -670,8 +664,8 @@ body {
 
 .iseeu_class li.parent:after {
   position: absolute;
-  font-family: Font Awesome\ 5 Free;
-  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
   right: 10px;
   top: 8px;
   color: #333;
