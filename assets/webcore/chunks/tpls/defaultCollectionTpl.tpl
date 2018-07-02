@@ -3,7 +3,7 @@
         <div class="col-md-4 col-12">
             <div class="image">
                 <a href="[[~[[+id]]]]" class="blink">
-                    <img src="[[+image:phphumbon=`w=255&h=170`]]"
+                    <img src="[[+image:phphumbon=`w=255&h=170&zc=1`]]"
                             alt="[[+pagetitle]]"
                             title="[[+pagetitle]]"
                             class="img-responsive"

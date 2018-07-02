@@ -2889,9 +2889,7 @@ a.scroll-to-top.CONTENT {
 .item-views.staff .item .properties {
     margin: 0
 }
-.item-views .item .image {
-    overflow: hidedden
-}
+
 .item-views .item .image .img-inside {
     border: 0;
     display: block;
@@ -5101,12 +5099,18 @@ div[id^=smartFilterDropDown] .popup-window-bottom-row, div[id^=smartFilterDropDo
     opacity: 0;
     visibility: hidden;
     height: 0;
-    -webkit-transition: height .15s ease;
-    -moz-transition: height .15s ease;
-    transition: height .15s ease;
+    transition: 0.5s;
     text-align: left;
     font-size: 13px;
-    color: #333
+    color: #333;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    outline: 1px dashed #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+
 }
 .footer_button .name {
     color: #777

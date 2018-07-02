@@ -63,29 +63,31 @@
     display: block;
 }
 .slick-prev {
-    left: 40px;
+    left: 0;
 }
 .slick-next {
-    right: 80px;
+    right: 0;
 }
 .slick-prev:before{
     font-family: Font Awesome\ 5 Free;
     font-weight: 600;
     content: "\f104";
     position: absolute;
-
     color: #fff;
+    left: 0;
 }
 .slick-next:before{
     font-family: Font Awesome\ 5 Free;
+    font-weight: 600;
     content: "\f105";
     position: absolute;
-
     color: #fff;
+    right: 0;
+
 }
 .slick-arrow:before {
     background: #333;
-    border-radius: 50%;
     padding: 0px 14px;
+
 }
 

@@ -1,12 +1,12 @@
-<div class="col-md-4 col-6">
+<div class="col-md-4 col-12">
     <div class="item"
             itemprop="itemListElement"
             itemscope=""
             itemtype="http://schema.org/Product">
         <div>
             <div class="image">
-                <a href="[[~[[+id]]]]" class="blink" itemprop="url">
-                    <img class="img-responsive"
+                <a href="[[~[[+id]]]]" class="blink d-block" itemprop="url">
+                    <img class="img-responsive w100p"
                             src="[[+middle]]"
                             alt="[[+pagetitle]]"
                             title="[[+pagetitle]]"

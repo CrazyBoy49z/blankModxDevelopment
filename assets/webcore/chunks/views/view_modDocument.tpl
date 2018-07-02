@@ -11,7 +11,8 @@
                         `
                         &tpl=`@INLINE
                         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-                            <span itemprop="title">[[+menutitle]]</span></li>
+                            <a href="[[+link]]"><span itemprop="title">[[+menutitle]]</span></a>
+                            </li>
                         `
                         &tplCurrent=`@INLINE
                         <li class="active"><span itemprop="title">[[+menutitle]]</span></li>

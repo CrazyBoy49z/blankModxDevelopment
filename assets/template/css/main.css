@@ -419,6 +419,24 @@ body {
   box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
+.content_table th,
+.content_table td {
+  padding: 15px;
+}
+
+.content_table th {
+  background-color: #5baa00;
+  color: #fff;
+}
+
+.content_table tr:nth-child(even) {
+  background-color: aliceblue;
+}
+
+.main_projects_all {
+  float: none;
+}
+
 .footer_middle {
   background-color: #f2f2f2;
 }
@@ -663,7 +681,7 @@ body {
 }
 
 .iseeu_class li.parent:after {
-  content: "\f107";
+  content: "\f105";
   font-family: "Font Awesome 5 Free";
   display: inline-block;
   font-weight: 600;
@@ -808,11 +826,11 @@ body {
 }
 
 .slick-prev {
-  left: 40px;
+  left: 0;
 }
 
 .slick-next {
-  right: 80px;
+  right: 0;
 }
 
 .slick-prev:before {
@@ -821,19 +839,20 @@ body {
   content: "\f104";
   position: absolute;
   color: #fff;
+  left: 0;
 }
 
 .slick-next:before {
   font-family: Font Awesome\ 5 Free;
+  font-weight: 600;
   content: "\f105";
   position: absolute;
   color: #fff;
+  right: 0;
 }
 
 .slick-arrow:before {
   background: #333;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
   padding: 0px 14px;
 }
 
@@ -868,7 +887,7 @@ body {
 
 .button_dark {
   background-color: #5baa00;
-  border-color: #fff;
+  border-color: transparent;
   color: #fff;
 }
 
@@ -1043,6 +1062,10 @@ div.pagination {
 
   .flatten_button {
     font-size: 23px;
+  }
+
+  .main_projects_all {
+    float: right;
   }
 
   .header__menu > li {

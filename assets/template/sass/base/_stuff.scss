@@ -1,0 +1,40 @@
+.content
+{
+    &_table
+    {
+        th,td
+        {
+            padding: 15px;
+        }
+
+        th
+        {
+            background-color: $main_color;
+            color: #fff;
+        }
+
+        tr
+        {
+            &:nth-child(even)
+            {
+                background-color: aliceblue;
+            }
+        }
+
+    }
+}
+
+.main
+{
+    &_projects
+    {
+        &_all
+        {
+            float:none;
+            @include media-breakpoint-up(md)
+            {
+                float: right;
+            }
+        }
+    }
+}

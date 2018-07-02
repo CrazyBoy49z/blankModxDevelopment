@@ -1,7 +1,7 @@
 <div class="header">
     <div class="container">
         <div class="header__top">
-            <div class="row align-items-center">
+            <div class="row align-items-center no-gutters">
                 <div class="col-6 col-md-3 header__logo">
                     <a href="/"><i class="fas fa-code main_color"></i> LOGO</a>
                 </div>

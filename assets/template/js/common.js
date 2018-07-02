@@ -38,7 +38,7 @@ $(function () {
     // jsDesc: slick set
     $('.main_carousel').slick({
         dots: true,
-        autoplay: true,
+        // autoplay: true,
         infinite: false,
         speed: 300,
         arrows: false,

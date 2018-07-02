@@ -9,7 +9,7 @@
     &tpl=`sliderTpl`
     ]]
 </div>
-<div class="row bg_gray">
+<div class="main_teasers bg_gray">
     <div class="container">
         <div class="col-md-12">
             <div class="item-views sections teasers front">
@@ -29,7 +29,7 @@
         </div>
     </div>
 </div>
-<div class="row">
+<div class="main_catalog">
     <div class="container">
         <div class="col-md-12">
             <div class="item-views catalog sections front">
@@ -48,26 +48,24 @@
         </div>
     </div>
 </div>
-<div class="row">
+<div class="main_advantages">
     <div class="container">
         <div class="col-md-12">
             <div class="row_custom">
-                <div class="maxwidth-theme">
-                    <div class="col-md-12_custom">
-                        <div class="banners-small front">
-                            <div class="items row_custom">
-                                [[pdoResources?
-                                &parents=`33`
-                                &resources=`37,38,39,40,41`
-                                &showHidden=`1`
-                                &showUnpublished=`1`
-                                &includeTVs=`image`
-                                &where=`{"image:!=":""}`
-                                &tvPrefix=``
-                                &includeContent=`1`
-                                &tpl=`advTpl`
-                                ]]
-                            </div>
+                <div class="col-md-12_custom">
+                    <div class="banners-small front">
+                        <div class="items row_custom">
+                            [[pdoResources?
+                            &parents=`33`
+                            &resources=`37,38,39,40,41`
+                            &showHidden=`1`
+                            &showUnpublished=`1`
+                            &includeTVs=`image`
+                            &where=`{"image:!=":""}`
+                            &tvPrefix=``
+                            &includeContent=`1`
+                            &tpl=`advTpl`
+                            ]]
                         </div>
                     </div>
                 </div>
@@ -75,17 +73,19 @@
         </div>
     </div>
 </div>
-<div class="row bg_gray">
+<div class="main_projects bg_gray house_project_main">
     <div class="container">
         <div class="col-md-12">
             <div class="catalog item-views table front">
                 <div class="top_wrapper_block nomargin_bottom">
                     <h3 class="title_block">Проекты домов</h3>
-                    <div class="custom_arrows float-right ml-3">
+                    <div class="custom_arrows d-none d-md-block float-right ml-3">
                         <div class="custom_arrows-left mr-1 cur"><i class="fas fa-angle-left"></i></div>
                         <div class="custom_arrows-right cur"><i class="fas fa-angle-right"></i></div>
                     </div>
-                    <a href="/catalog/" class="button button_white float-right"><span>Все проекты</span></a>
+                    <a href="/catalog/"
+                            class="button button_white main_projects_all mb-2 mb-md-0"><span>Все проекты</span></a>
+                    <div class="w-100"></div>
                     <div class="row main_carousel">
                         [[msProducts?
                         &parents=`6`
@@ -99,7 +99,7 @@
         </div>
     </div>
 </div>
-<div class="row">
+<div class="main_news">
     <div class="container">
         <div class="col-md-12">
             <div class="news front">
@@ -123,7 +123,7 @@
         </div>
     </div>
 </div>
-<div class="row bg_gray">
+<div class="main_portfolio bg_gray">
     <div class="container">
         <div class="col-md-12">
             <div class="item-views portfolio front">
