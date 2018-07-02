@@ -15,6 +15,11 @@ var onloadCallback = function () {
             'sitekey': mysitekey
         });
     }
+    if ($('#service_g').length) {
+        grecaptcha.render('service_g', {
+            'sitekey': mysitekey
+        });
+    }
 }
 $(function () {
     var $body = $('body');
@@ -36,6 +41,7 @@ $(function () {
         autoplay: true,
         infinite: false,
         speed: 300,
+        arrows: false,
         prevArrow: '.custom_arrows-left',
         nextArrow: '.custom_arrows-right',
         slidesToShow: 4,

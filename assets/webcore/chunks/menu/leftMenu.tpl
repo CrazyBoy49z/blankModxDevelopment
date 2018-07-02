@@ -1,4 +1,4 @@
-<div class="col-md-3 d-none d-md-flex">
+<div class="col-md-3 d-none d-md-block">
     <div class="sidebar">
         [[pdoMenu?
         &parents=`[[!leftMenuParent]]`

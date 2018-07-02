@@ -98,15 +98,15 @@
 
             &.parent:after
             {
-                position: absolute;
-                font-family: "Font Awesome 5 Free";
                 content: "\f107";
+                font-family: "Font Awesome 5 Free";
+                display: inline-block;
+                font-weight: 600;
+                position: absolute;
                 right: 10px;
                 top: 8px;
                 color: #333;
             }
-
-
 
         }
         a

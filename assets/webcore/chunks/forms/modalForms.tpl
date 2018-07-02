@@ -96,6 +96,10 @@
                 <p>Ваше имя:</p>
                 <input type="text" class="form-control" name="name" value="[[!+callback.name]]">
             </div>
+            <div class="form-group spy">
+                <p>Ваше имя:</p>
+                <input type="text" class="form-control" name="text" value="[[!+callback.text]]">
+            </div>
             <div class="form-group">
                 <p>Телефон:</p>
                 <input type="text"
@@ -118,7 +122,7 @@
             <button type="submit" name="callback_send" class="button button_dark mt-3 w100p p3">Заказать</button>
         </div>
     </form>
-    <form class="compensate-for-scrollbar d-inline-block" id="count">
+    <form id="count" class="compensate-for-scrollbar d-inline-block" >
         <div class="form_header bg_main_color tac p-3">
             <div class="form_header_text white">Рассчитать стоимость строительства</div>
         </div>
@@ -135,6 +139,10 @@
                 <div class="form-group col-md-5 ml-md-3">
                     <p>Ваше имя:<span class="red_star">*</span></p>
                     <input type="text" name="name" value="[[!+count.name]]" class="form-control" required>
+                </div>
+                <div class="form-group spy">
+                    <p>Email address:</p>
+                    <input type="text" name="text" class="form-control" value="[[!+count.text]]">
                 </div>
             </div>
             <div class="form-row justify-content-center">
@@ -203,6 +211,51 @@
         </div>
         <div class="justify-content-center">
             <button type="submit" name="count_send" class="button button_dark mt-3 w100p p-3">Заказать</button>
+        </div>
+    </form>
+    <form id="service" class="compensate-for-scrollbar d-inline-block">
+        <div class="form_header bg_main_color tac p-3">
+            <div class="form_header_text white">Заказать услугу</div>
+        </div>
+        <div class="form_wrap p-4">
+            <div class="form-group">
+                <p>Ваше имя:</p>
+                <input type="text" name="name" class="form-control" value="[[!+service.name]]">
+            </div>
+            <div class="form-group">
+                <p>Телефон:</p>
+                <input type="text"
+                        name="phone"
+                        [[!+service.phone]]
+                        class="form-control">
+            </div>
+            <div class="form-group">
+                <p>Email:</p>
+                <input type="email"
+                        name="email"
+                        class="form-control"
+                        value="[[!+service.email]]">
+            </div>
+            <div class="form-group spy">
+                <p>Email address:</p>
+                <input type="text" name="text" class="form-control" value="[[!+service.text]]">
+            </div>
+            <div class="form-group">
+                <p>Интересующая услуга:</p>
+                <input type="text" name="services" class="form-control" value="[[!+service.services]]">
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="tintCheckbox" required>
+                <label class="custom-control-label" for="tintCheckbox">
+                    <a href="[[~65]]" rel="nofollow" target="_blank">Я согласен с политикой конфиденциальности</a>
+                </label>
+            </div>
+            <div class="form-group">
+                <div class="form_m">
+                    <div id="service_g"></div>
+                </div>
+            </div>
+            <button type="submit" name="tint_send" class="button button_dark mt-3 w100p p-3">Заказать</button>
         </div>
     </form>
 </div>

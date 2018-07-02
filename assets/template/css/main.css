@@ -663,9 +663,11 @@ body {
 }
 
 .iseeu_class li.parent:after {
-  position: absolute;
-  font-family: "Font Awesome 5 Free";
   content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-weight: 600;
+  position: absolute;
   right: 10px;
   top: 8px;
   color: #333;
@@ -815,6 +817,7 @@ body {
 
 .slick-prev:before {
   font-family: Font Awesome\ 5 Free;
+  font-weight: 600;
   content: "\f104";
   position: absolute;
   color: #fff;

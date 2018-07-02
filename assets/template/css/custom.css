@@ -61,3 +61,6 @@ textarea.form-control {
 .rotate_phone {
     transform: rotate(100deg);
 }
+.licenses .slick-dots li:before {
+    content: '';
+}

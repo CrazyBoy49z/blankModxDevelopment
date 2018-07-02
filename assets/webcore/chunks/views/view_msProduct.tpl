@@ -69,7 +69,8 @@
                                     <div class="previewtext" itemprop="description">[[*description]]</div>
                                     `]]
                                     <div class="more_block"><span class="smooth_scroll"
-                                                data-scroll="content">Подробнее <i class="fas fa-angle-down main_color cur"></i></span></div>
+                                                data-scroll="content">Подробнее <i class="fas fa-angle-down main_color cur"></i></span>
+                                    </div>
                                     <div class="order">
                                                     <span class="button button_dark cur"
                                                             data-event="fancy"
@@ -97,23 +98,21 @@
                             </div>
                         </div>
                     </div>
-                    [[*manyIcons:notempty=`
-                        <div class="bx_item_detail_inc_two banners-small front">
-                            <div class="items row_custom">
-                                [[pdoResources?
-                                &parents=`33`
-                                &resources=`[[*manyIcons]]`
-                                &showHidden=`1`
-                                &showUnpublished=`1`
-                                &includeTVs=`image`
-                                &where=`{"image:!=":""}`
-                                &tvPrefix=``
-                                &includeContent=`1`
-                                &tpl=`productAdvantagesTpl`
-                                ]]
-                            </div>
+                    <div class="bx_item_detail_inc_two banners-small front">
+                        <div class="items row_custom">
+                            [[pdoResources?
+                            &parents=`33`
+                            &resources=`[[*manyIcons:default=`37,38,39,40`]]`
+                            &showHidden=`1`
+                            &showUnpublished=`1`
+                            &includeTVs=`image`
+                            &where=`{"image:!=":""}`
+                            &tvPrefix=``
+                            &includeContent=`1`
+                            &tpl=`productAdvantagesTpl`
+                            ]]
                         </div>
-                    `]]
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,7 +144,10 @@
                     </div>
                 </div>
                 <hr class="big"/>
-                [[$countForm]]
+                [[$contentForm?
+                    &name=`count`
+                    &title=`Заказать расчет стоимости`
+                ]]
             </div>
         </div>
     </div>
