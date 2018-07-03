@@ -5,9 +5,10 @@
        &-menu
        {
            position: relative;
-            @include media-breakpoint-down(md)
+           display: none;
+            @include media-breakpoint-up(md)
             {
-                display: none;
+                display: flex;
             }
        }
    }
@@ -62,10 +63,18 @@
                text-align: center;
                @include media-breakpoint-up(md)
                {
-                   padding:20px;
                    color: #fff;
-                   font-weight: 700;
+                   font-weight: 400;
+                   padding:7px 0;
                    text-transform: uppercase;
+                   font-size: 11px;
+
+               }
+               @include media-breakpoint-up(xl)
+               {
+                   padding:20px;
+                   font-weight: 700;
+                   font-size: 14px;
                }
             }
            &.parent
@@ -89,6 +98,7 @@
                }
                & > a
                {
+
                    @include media-breakpoint-up(md)
                    {
                        &:after
@@ -96,9 +106,18 @@
                            font-family: Font Awesome\ 5 Free;
                            content: "\f107";
                            position: absolute;
+                           font-weight: 600;
+                           right: 1px;
+                           color: #fff;
+                       }
+                   }
+
+                   @include media-breakpoint-up(xl)
+                   {
+                       &:after
+                       {
                            right: 10px;
                            top: 19px;
-                           color: #fff;
                        }
                    }
 
@@ -146,8 +165,8 @@
     &__search
     {
         box-sizing: border-box;
-        font-size: 30px;
-        padding-top: 15px;
+        font-size: 20px;
+        padding-top: 7px;
         background-color: $menu_main_color;
         &:hover
         {
@@ -157,6 +176,12 @@
         i
         {
             color: #fff;
+        }
+
+        @include media-breakpoint-up(xl)
+        {
+            font-size: 30px;
+            padding-top: 15px;
         }
     }
 

@@ -76,7 +76,7 @@
                                                             data-event="fancy"
                                                             data-name="count"
                                                             data-product="[[*pagetitle]]">Заказать расчет стоимости</span>
-                                        <span class="button button_white cur"
+                                        <span class="button button_white cur mt-1 mt-md-0"
                                                 data-event="fancy"
                                                 data-name="feedback"
                                                 data-product="[[*pagetitle]]">Задать вопрос</span>

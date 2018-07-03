@@ -35,32 +35,35 @@
                 </div>
             </div>
         </div>
-        <div class="row no-gutters header__wrap-menu">
-            <div class="col-md-11">
-                <div class="menu-row">
-                    [[pdoMenu?
-                    &parents=`0`
-                    &outerClass=`row menu header__menu no-gutters`
-                    &innerClass=`inner_menu`
-                    &tplParentRow=`@INLINE <li [[+classes]]><a href="[[+link]]">[[+menutitle]]</a><i class="fas fa-angle-down d-md-none cur"></i>[[+wrapper]]`
-                    &rowClass=`col-12 col-md`
-                    &parentClass=`parent`
-                    &tplInnerRow=`@INLINE <li><a href="[[+link]]">[[+menutitle]]</a></li>`
-                    &tplInnerHere=`@INLINE <li class="active"><a href="[[+link]]">[[+menutitle]]</a></li>`
-                    &level=`2`
-                    ]]
+    </div>
+    <div class="header__bottom bg_menu_color">
+        <div class="container">
+            <div class="row no-gutters header__wrap-menu">
+                <div class="col-md-11">
+                    <div class="menu-row">
+                        [[pdoMenu?
+                        &parents=`0`
+                        &outerClass=`row menu header__menu no-gutters`
+                        &innerClass=`inner_menu`
+                        &tplParentRow=`@INLINE <li [[+classes]]><a href="[[+link]]">[[+menutitle]]</a><i class="fas fa-angle-down d-md-none cur"></i>[[+wrapper]]`
+                            &rowClass=`col-12 col-md`
+                            &parentClass=`parent`
+                            &tplInnerRow=`@INLINE <li><a href="[[+link]]">[[+menutitle]]</a></li>`
+                        &tplInnerHere=`@INLINE <li class="active"><a href="[[+link]]">[[+menutitle]]</a></li>`
+                        &level=`2`
+                        ]]
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-1 header__search tac cur d-none d-md-block">
-                <i class="fas fa-search d-none d-md-inline-block"></i>
-            </div>
-            <form class="header__search-form">
-                <div class="header__search-input ml-3 ml-md-1">
-                    <input type="text" autocomplete="off" class="form-control" placeholder="Найти">
+                <div class="col-md-1 header__search tac cur d-none d-md-block">
+                    <i class="fas fa-search d-none d-md-inline-block"></i>
                 </div>
-                <input type="submit" class="button button_dark header__search-submit" value="Найти">
-            </form>
+                <form class="header__search-form">
+                    <div class="header__search-input ml-3 ml-md-1">
+                        <input type="text" autocomplete="off" class="form-control" placeholder="Найти">
+                    </div>
+                    <input type="submit" class="button button_dark header__search-submit" value="Найти">
+                </form>
+            </div>
         </div>
-
     </div>
 </div>

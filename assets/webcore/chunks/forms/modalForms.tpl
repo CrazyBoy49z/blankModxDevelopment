@@ -49,7 +49,7 @@
             <div class="form_header_text white">Задать вопрос</div>
             <div class="white">Менеджеры компании с радостью ответят на ваши вопросы.</div>
         </div>
-        <div class="form_wrap p-4">
+        <div class="form_wrap p-1 m-md-4">
             <div class="form-group">
                 <p>Ваше имя:</p>
                 <input type="text" name="name" class="form-control" value="[[!+feedback.name]]">
@@ -91,7 +91,7 @@
             <div class="form_header_text white">Обратный звонок</div>
             <div class="white">Представьтесь, мы вам перезвоним</div>
         </div>
-        <div class="form_wrap p-4">
+        <div class="form_wrap p-1 p-md-4">
             <div class="form-group">
                 <p>Ваше имя:</p>
                 <input type="text" class="form-control" name="name" value="[[!+callback.name]]">
@@ -126,7 +126,7 @@
         <div class="form_header bg_main_color tac p-3">
             <div class="form_header_text white">Рассчитать стоимость строительства</div>
         </div>
-        <div class="form_wrap p-4">
+        <div class="form_wrap p-1 p-md-4">
             <div class="form-row justify-content-center">
                 <div class="form-group col-md-5">
                     <p>Этажность дома:</p>
@@ -217,7 +217,7 @@
         <div class="form_header bg_main_color tac p-3">
             <div class="form_header_text white">Заказать услугу</div>
         </div>
-        <div class="form_wrap p-4">
+        <div class="form_wrap p-1 p-md-4">
             <div class="form-group">
                 <p>Ваше имя:</p>
                 <input type="text" name="name" class="form-control" value="[[!+service.name]]">
