@@ -435,6 +435,7 @@ body {
 .content_table th {
   background-color: #5baa00;
   color: #fff;
+  font-weight: 600;
 }
 
 .content_table tr:nth-child(even) {

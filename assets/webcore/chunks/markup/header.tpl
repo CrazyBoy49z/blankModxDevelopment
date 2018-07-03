@@ -17,19 +17,32 @@
                         Проектирование и строительство<br>
                         загородных домов под ключ
                     </div>
-
                 </div>
                 <div class="col-6 col-md-4 header__contacts">
-                    <div class="col-auto d-md-none text-right dark_content mobile_click">
-                        <i class="fas fa-align-justify mobile_click cur fz30"></i>
-                    </div>
-                    <div class="row justify-content-end d-none d-md-flex align-items-center">
+
+                    <div class="row justify-content-end align-items-center">
+                        <div class="col-auto">
+                            <a href="/cart" id="msMiniCart" class="cart fly">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="opener">
+                                <span class="count ms2_total_count">[[+total_count ]]</span>
+                            </span>
+                            </a>
+                        </div>
+                        <div class="col-auto d-md-none text-right dark_content mobile_click">
+                            <i class="fas fa-align-justify mobile_click cur fz30"></i>
+                        </div>
                         <div class="col-auto d-none d-md-block header__contacts-phone">
-                            <div><i class="fas rotate_phone fa-phone main_color"></i> <a class="dark_content" href="tel:0000000">74555555555</a></div>
-                            <div><i class="fas rotate_phone fa-phone main_color"></i> <a class="dark_content" href="tel:0000000">74555555555</a></div>
+                            <div><i class="fas rotate_phone fa-phone main_color"></i> <a class="dark_content"
+                                        href="tel:0000000">74555555555</a></div>
+                            <div><i class="fas rotate_phone fa-phone main_color"></i> <a class="dark_content"
+                                        href="tel:0000000">74555555555</a></div>
                         </div>
                         <div class="col-auto d-none d-md-block header__contacts-callback">
-                            <div class="cur button button_white button_rounded" data-event="fancy" data-name="callback">Заказать звонок</div>
+                            <div class="cur button button_white button_rounded"
+                                    data-event="fancy"
+                                    data-name="callback">Заказать звонок
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,11 +58,17 @@
                         &parents=`0`
                         &outerClass=`row menu header__menu no-gutters`
                         &innerClass=`inner_menu`
-                        &tplParentRow=`@INLINE <li [[+classes]]><a href="[[+link]]">[[+menutitle]]</a><i class="fas fa-angle-down d-md-none cur"></i>[[+wrapper]]`
+                        &tplParentRow=`@INLINE
+                        <li [[+classes]]>
+                            <a href="[[+link]]">[[+menutitle]]</a><i class="fas fa-angle-down d-md-none cur"></i>[[+wrapper]]`
                             &rowClass=`col-12 col-md`
                             &parentClass=`parent`
-                            &tplInnerRow=`@INLINE <li><a href="[[+link]]">[[+menutitle]]</a></li>`
-                        &tplInnerHere=`@INLINE <li class="active"><a href="[[+link]]">[[+menutitle]]</a></li>`
+                            &tplInnerRow=`@INLINE
+                        <li><a href="[[+link]]">[[+menutitle]]</a></li>
+                        `
+                        &tplInnerHere=`@INLINE
+                        <li class="active"><a href="[[+link]]">[[+menutitle]]</a></li>
+                        `
                         &level=`2`
                         ]]
                     </div>
@@ -57,9 +76,14 @@
                 <div class="col-md-1 header__search tac cur d-none d-md-block">
                     <i class="fas fa-search d-none d-md-inline-block"></i>
                 </div>
-                <form class="header__search-form">
+                <form action="[[~3]]" method="get" class="msearch2 header__search-form">
                     <div class="header__search-input ml-3 ml-md-1">
-                        <input type="text" autocomplete="off" class="form-control" placeholder="Найти">
+                        <input name="query"
+                                value="[[+mse2_query]]"
+                                type="text"
+                                autocomplete="off"
+                                class="form-control"
+                                placeholder="Найти">
                     </div>
                     <input type="submit" class="button button_dark header__search-submit" value="Найти">
                 </form>

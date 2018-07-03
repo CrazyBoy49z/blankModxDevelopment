@@ -1,4 +1,4 @@
-<div class="row my-5">
+<div class="my-5">
     <div class="container">
         <div class="row">
             [[$leftMenu]]
@@ -26,20 +26,21 @@
                     </div>
                 `]]
                 [[*getAlbum:ne=`0`:then=`
-                <div class="w-100"></div>
                 <div class="item-views portfolio front mb-5">
                     <div class="row" itemscope="" itemtype="http://schema.org/ItemList">
                         [[Gallery? &album=`[[*getAlbum]]` &thumbTpl=`resourceGalleryTpl` ]]
                     </div>
                 </div>
                 `]]
-                    [[*table:notempty=`
-                        [[TVTable?
-                        &tv=`12`
-                        &id=`[[*id]]`
-                        &classname=`content_table`
-                        ]]
-                    `]]
+               
+                <div class="table_wrap">
+                    [[TVTable?
+                    &tv=`12`
+                    &id=`[[*id]]`
+                    &classname=`content_table`
+                    ]]
+                </div>
+               
                 [[$contentForm?
                     &name=`service`
                     &title=`Заказать услугу`

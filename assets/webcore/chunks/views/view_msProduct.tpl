@@ -81,6 +81,11 @@
                                                 data-name="feedback"
                                                 data-product="[[*pagetitle]]">Задать вопрос</span>
                                     </div>
+                                    <form class="form-horizontal ms2_form mt-3" method="post">
+                                        <input type="hidden" name="id" value="[[*id]]"/>
+                                        <input type="hidden" name="count" id="product_price" class="input-sm form-control" value="1"/>
+                                        <button type="submit" class="button button_white p-3" name="ms2_action" value="cart/add">Заказать</button>
+                                    </form>
                                     <div class="share">
                                         <hr/>
                                         <span class="text">Поделиться ссылкой:</span>
