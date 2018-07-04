@@ -1,6 +1,6 @@
 <form class="form-horizontal ms2_form" id="msOrder" method="post">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-md-6">
             <h4>{'ms2_frontend_credentials' | lexicon}:</h4>
             {foreach ['email','receiver','phone'] as $field}
                 <div class="form-group input-parent">
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-md-6">
             <h4>{'ms2_frontend_address' | lexicon}:</h4>
             {foreach ['index','region','city'] as $field}
                 <div class="form-group input-parent">
@@ -50,26 +50,48 @@
                 </div>
             {/foreach}
         </div>
-    </div>
-    <div class="row hidden">
-        <div class="col-lg-6" id="deliveries">
-            <input type="radio" name="delivery" value="1" id="delivery_1" data-payments="[1]" checked="" disabled>
+        <div class="col-md-6" id="deliveries">
+            <h4>{'ms2_frontend_deliveries' | lexicon}:</h4>
+            <div class="form-group">
+                <label class="col-md-4 control-label">
+                    <span class="required-star">*</span> {'ms2_frontend_delivery_select' | lexicon}
+                </label>
+                <div class="col-sm-6">
+                    {foreach $deliveries as $delivery index=$index}
+                        {var $checked = !$order.delivery && $index == 0 || $delivery.id == $order.delivery}
+                        <div class="checkbox">
+                            <label class="delivery input-parent">
+                                <input type="radio" name="delivery" value="{$delivery.id}" id="delivery_{$delivery.id}"
+                                        data-payments="{$delivery.payments | json_encode}"
+                                        {$checked ? 'checked' : ''}>
+                                {if $delivery.logo?}
+                                    <img src="{$delivery.logo}" alt="{$delivery.name}" title="{$delivery.name}"/>
+                                {else}
+                                    {$delivery.name}
+                                {/if}
+                                {if $delivery.description?}
+                                    <p class="small">
+                                        {$delivery.description}
+                                    </p>
+                                {/if}
+                            </label>
+                        </div>
+                    {/foreach}
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6" id="payments">
-            <input type="radio" name="payment" value="1" id="payment_1" checked="" disabled>
-        </div>
     </div>
-    <button type="button" name="ms2_action" value="order/clean" class="button button_white ms2_link">
+    <button type="button" name="ms2_action" value="order/clean" class="btn btn-default ms2_link p-3">
         <i class="fa fa-remove"></i> {'ms2_frontend_order_cancel' | lexicon}
     </button>
     <hr/>
-    <div class="well pull-right">
-        <div>
+    <div class="row justify-content-end">
+        <div class="col-auto">
             <h3>{'ms2_frontend_order_cost' | lexicon}:
                 <span id="ms2_order_cost">{$order.cost ?: 0}</span>
                 {'ms2_frontend_currency' | lexicon}
             </h3>
-            <button type="submit" name="ms2_action" value="order/submit" class="button button_dark ms2_link pull-right">
+            <button type="submit" name="ms2_action" value="order/submit" class="p-3 btn btn-default btn-primary ms2_link pull-right">
                 {'ms2_frontend_order_submit' | lexicon}
             </button>
         </div>

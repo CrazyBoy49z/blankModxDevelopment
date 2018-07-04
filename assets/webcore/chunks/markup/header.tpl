@@ -21,15 +21,8 @@
                 <div class="col-6 col-md-4 header__contacts">
 
                     <div class="row justify-content-end align-items-center">
-                        <div class="col-auto">
-                            <a href="/cart" id="msMiniCart" class="cart fly">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span class="opener">
-                                <span class="count ms2_total_count">[[+total_count ]]</span>
-                            </span>
-                            </a>
-                        </div>
-                        <div class="col-auto d-md-none text-right dark_content mobile_click">
+                        [[*id:ne=`67`:then=`[[!msMiniCart?tpl=`miniCartTpl`]]`]]
+                        <div class="col-auto d-md-none text-right dark_content mobile_click mr-3">
                             <i class="fas fa-align-justify mobile_click cur fz30"></i>
                         </div>
                         <div class="col-auto d-none d-md-block header__contacts-phone">
@@ -61,8 +54,8 @@
                         &tplParentRow=`@INLINE
                         <li [[+classes]]>
                             <a href="[[+link]]">[[+menutitle]]</a><i class="fas fa-angle-down d-md-none cur"></i>[[+wrapper]]`
-                            &rowClass=`col-12 col-md`
-                            &parentClass=`parent`
+                        &rowClass=`col-12 col-md-auto`
+                        &parentClass=`parent`
                             &tplInnerRow=`@INLINE
                         <li><a href="[[+link]]">[[+menutitle]]</a></li>
                         `

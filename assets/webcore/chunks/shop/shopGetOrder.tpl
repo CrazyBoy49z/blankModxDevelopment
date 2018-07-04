@@ -1,17 +1,18 @@
 <div id="msCart">
-    <h1>Спасибо за заказ!</h1>
-    <h4>В ближайшее время с Вами свяжутся!</h4>
+    <h1 class="my-4">Спасибо за заказ!</h1>
+    <h4 class="my-3">В ближайшее время с Вами свяжутся!</h4>
     <div class="table-responsive">
+
         <table class="table table-striped re">
             <tr class="header">
-                <th class="image col-md-3">&nbsp;</th>
-                <th class="title col-md-4">{'ms2_cart_title' | lexicon}</th>
-                <th class="count col-md-2">{'ms2_cart_count' | lexicon}</th>
-                <th class="price col-md-3">{'ms2_cart_cost' | lexicon}</th>
+                <th class="image">&nbsp;</th>
+                <th class="title">{'ms2_cart_title' | lexicon}</th>
+                <th class="count">{'ms2_cart_count' | lexicon}</th>
+                <th class="price">{'ms2_cart_cost' | lexicon}</th>
             </tr>
             {foreach $products as $product}
                 <tr>
-                    <td class="image">
+                    <td class="image fz18">
                         {if $product.thumb?}
                             <img src="{$product.thumb}" alt="{$product.pagetitle}" title="{$product.pagetitle}"/>
                         {else}
@@ -20,7 +21,7 @@
                                     alt="{$product.pagetitle}" title="{$product.pagetitle}"/>
                         {/if}
                     </td>
-                    <td class="title">
+                    <td class="title fz18">
                         {if $product.id?}
                             <a href="{$product.id | url}">{$product.name}</a>
                         {else}
@@ -32,8 +33,8 @@
                             </div>
                         {/if}
                     </td>
-                    <td class="count">{$product.count} {'ms2_frontend_count_unit' | lexicon}</td>
-                    <td class="price">{$product.price} {'ms2_frontend_currency' | lexicon}</td>
+                    <td class="count fz18">{$product.count} {'ms2_frontend_count_unit' | lexicon}</td>
+                    <td class="price fz18">{$product.price} {'ms2_frontend_currency' | lexicon}</td>
                 </tr>
             {/foreach}
             <tr class="footer">
@@ -46,14 +47,15 @@
                 </th>
             </tr>
         </table>
+
     </div>
 
-    <h4>
+    <h2>
         {'ms2_frontend_order_cost' | lexicon}:
         {if $total.delivery_cost}
             {$total.cart_cost} {'ms2_frontend_currency' | lexicon} + {$total.delivery_cost}
             {'ms2_frontend_currency' | lexicon} =
         {/if}
         <strong>{$total.cost}</strong> {'ms2_frontend_currency' | lexicon}
-    </h4>
+    </h2>
 </div>

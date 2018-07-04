@@ -63,6 +63,40 @@ $(function () {
             }
         ]
     });
+    $('.licenses_carousel').slick({
+        dots: true,
+        autoplay: true,
+        infinite: true,
+        speed: 300,
+        arrows: false,
+        prevArrow: '.custom_arrows-left',
+        nextArrow: '.custom_arrows-right',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 360,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
     // jsDesc: fancybox
     $(".fancybox").fancybox({
         buttons: ['close']
@@ -87,11 +121,57 @@ $(function () {
         dots: true
     });
     $('.catalog_slider').slick();
+
+    var dots;
+    var lngMenu;
+    if (window.matchMedia("(min-width: 768px)").matches) {
+
+        // jsDesc: добавление точек в верхнее меню. lngMenu задает количество видимых пунктов. var dots - задает нужно ли такое поведение
+
+        dots = true;
+        lngMenu = 5;
+
+    }
+    if(window.matchMedia("(min-width: 992px)").matches) {
+
+        dots = true;
+        lngMenu = 6;
+    }
+
+
     if (window.matchMedia("(min-width: 768px)").matches) {
         fixedPanel();
         $(document).scroll(function () {
             fixedPanel();
         });
+
+
+        if(dots) {
+            var menuHeight = $('.header__menu').height();
+            var menuLi = $('.header__menu > li');
+            if(menuLi.length >= lngMenu) {
+                // $('.header__menu').css('overflow','hidden');
+                var menuIcons = '<li class="col-12 col-md-auto header__menu-dots"><i class="fas fa-ellipsis-h"></i><ul class="header__menu-inner inner_menu"></ul></li>';
+                menuLi.eq(lngMenu - 1).after(menuIcons);
+                menuLi.each(function (index) {
+                    if(index >= lngMenu) {
+                        $(this).appendTo($('.header__menu-inner'));
+                        $(this).removeClass('col-12 col-md-auto')
+                    }
+                });
+                $('.header__menu').css('overflow','inherit');
+
+            }
+        }
+
+
+
+
+        $('.header__search').click(function () {
+            $('.header__wrap-menu .header__search-form').toggleClass('show');
+        });
+
+
     } else {
         $('.mobile_click i').click(function () {
             $('.header__wrap-menu').slideToggle();
@@ -100,9 +180,11 @@ $(function () {
             $(this).next().slideToggle();
         });
     }
-    $('.header__search').click(function () {
-        $('.header__wrap-menu .header__search-form').toggleClass('show');
-    });
+
+
+
+
+
     var seeMenu = $('.iseeu_menu');
     var topPanelSlogan = $('.header__slogan');
     $('.header__search-form').clone().appendTo(topPanelSlogan);
@@ -116,4 +198,5 @@ $(function () {
     $('.aside__menu i').click(function () {
         $(this).toggleClass('open');
     });
+
 });

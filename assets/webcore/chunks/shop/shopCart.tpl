@@ -4,7 +4,7 @@
     {else}
         <div class="table">
             <div class="table table-striped">
-                <div class="headerCart row hidden-xs">
+                <div class="headerCart row d-none d-md-flex fz18 py-2 mb-4">
                     <div class="image col-md-2 col-lg-2">&nbsp;</div>
                     <div class="title col-md-3 col-lg-3">{'ms2_cart_title' | lexicon}</div>
                     <div class="count col-md-3 col-lg-3">{'ms2_cart_count' | lexicon}</div>
@@ -65,7 +65,7 @@
                     </div>
                 {/foreach}
 
-                <div class="footerCart row">
+                <div class="footerCart row my-4 fz18">
                     <div class="total_cost col-lg-3 pull-right text-right">
                         <span class="ms2_total_cost">{$total.cost}</span>
                         {'ms2_frontend_currency' | lexicon}
@@ -79,10 +79,10 @@
             </div>
         </div>
         <form method="post">
-            <button class="btn btn-default" type="submit" name="ms2_action" value="cart/clean">
+            <button class="btn btn-default p-3" type="submit" name="ms2_action" value="cart/clean">
                 <i class="fa fa-remove"></i> {'ms2_cart_clean' | lexicon}
             </button>
-            <a href="/cart/order" class="button button_dark p-3">Оформить заказ</a>
+            <a href="[[~68]]" class="button button_dark p-3">Оформить заказ</a>
         </form>
     {/if}
 </div>

@@ -1,8 +1,10 @@
 <?php
-
 $pages = array(
-    'contacts'=>45,
-
+    'contacts' => 45,
+    'search' => 3,
+    'price' => 44,
+    'cart' => 67,
+    'order' => 68
 );
 
 $id = $modx->resource->get('id');

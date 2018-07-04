@@ -46,6 +46,15 @@
         }
         & > li.child
         {
+            .active
+            {
+                .submenu
+                {
+                    visibility: visible;
+                    opacity: 1;
+                    height: auto;
+                }
+            }
             &.open
             {
                 & > .submenu
