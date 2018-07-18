@@ -44,29 +44,14 @@
                 padding: 10px;
             }
         }
-        & > li.child
+
+        li.child
         {
-            .active
-            {
-                .submenu
-                {
-                    visibility: visible;
-                    opacity: 1;
-                    height: auto;
-                }
-            }
-            &.open
-            {
-                & > .submenu
-                {
-                    height:auto;
-                    visibility: visible;
-                }
-            }
             & > a
             {
                 width: 90%;
             }
+
             & > i
             {
                 display: inline-block;
@@ -85,14 +70,45 @@
             }
         }
 
+        & > li.child
+        {
+            &.active
+            {
+                .submenu
+                {
+                    visibility: visible;
+                    opacity: 1;
+                    height: auto;
+                }
+            }
+            &.open
+            {
+                & > .submenu
+                {
+                    height:auto;
+                    visibility: visible;
+                }
+            }
+
+        }
+
         .submenu
         {
             visibility: hidden;
             height: 0;
             opacity:0;
-            //transition:1s;
-            transition: all 1s ease;
+            transition: all 0.7s ease;
             background-color: $light_gray_color;
+
+            li.active {
+                background-color: #73a03e;
+            }
+
+
+            ul
+            {
+                background-color: #cdd2d8;
+            }
 
             li
             {

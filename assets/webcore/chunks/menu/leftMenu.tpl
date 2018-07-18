@@ -5,7 +5,7 @@
         &parents=`[[leftMenuParent]]`
         &outerClass=`aside__menu`
         &innerClass=`submenu`
-        &level=`2`
+        &level=`3`
         &tplParentRow=`leftMenuTpl`
         &parentClass=`child`
         ]]

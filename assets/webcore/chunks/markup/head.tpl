@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="/assets/template/css/bootstrap-4.0.0.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/template/js/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/template/js/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="/assets/template/css/all.css">
+    <!--link rel="stylesheet" type="text/css" href="/assets/template/css/all.css"-->
+    <link rel="stylesheet" type="text/css" href="/assets/template/css/result.css">
     <link rel="stylesheet" type="text/css" href="/assets/template/css/main.css">
     <link rel="stylesheet" type="text/css" href="/assets/template/css/custom.css">
 </head>
